@@ -1,0 +1,18 @@
+[
+    {
+        "table":"demo1",
+        "shard_mode":"hash",
+        "hash": {
+            "shard_size": 100,
+            "shard_key": "id"
+        }
+    },
+    {
+        "table": "demo2",
+        "shard_mode":"range",
+        "range": {
+            "shard_size": 100,
+            "shard_range": 10
+        }
+    }
+]
